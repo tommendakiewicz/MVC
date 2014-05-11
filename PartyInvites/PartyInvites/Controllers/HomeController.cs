@@ -9,7 +9,7 @@ namespace PartyInvites.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: /Home/
+        //default home page
         public ViewResult Index()
         {
             int hour = DateTime.Now.Hour;
@@ -29,7 +29,6 @@ namespace PartyInvites.Controllers
         {
           if (ModelState.IsValid)
           {
-            // TODO: Email response to the party organiser
             return View("Thanks", guestResponse);
           } else
           {
@@ -37,6 +36,5 @@ namespace PartyInvites.Controllers
             return View();
           }
         }
-
     }
 }

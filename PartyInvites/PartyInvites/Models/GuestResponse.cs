@@ -4,6 +4,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
+/* Class for storing guest response information complete with validation. */
+
 namespace PartyInvites.Models
 {
   public class GuestResponse
